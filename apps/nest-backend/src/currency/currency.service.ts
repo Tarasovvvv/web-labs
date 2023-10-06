@@ -53,7 +53,8 @@ export class CurrencyService {
         else if(d != 0) {
             day = ("0" + (data.getDate() - 1)).slice(-2);
         }
-        let date = year + "-" + month + "-" + day;
+        //let date = year + "-" + month + "-" + day;
+        let date = "2023-10-05";
         let response = await axios.get(
             `${process.env.CURRENCY_URL}` + date + `.json?` +
             `app_id=${process.env.CURRENCY_APP_ID}&` +

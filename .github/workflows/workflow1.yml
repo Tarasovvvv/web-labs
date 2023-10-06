@@ -37,7 +37,8 @@ jobs:
       - name: Test nest-backend-e2e
         run: |
           nx serve nest-backend ;
-          nx e2e nest-backend-e2e
+          nx e2e nest-backend-e2e ;
+          pkill -f "nx serve nest-backend"
 
   deploy:
     needs: [build, test]

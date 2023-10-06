@@ -39,7 +39,7 @@ jobs:
         run: nx test nest-backend-e2e
 
   deploy:
-    needs: [biuld, test]
+    needs: [build, test]
     runs-on: self-hosted
     
     steps:

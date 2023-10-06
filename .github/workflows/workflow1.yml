@@ -35,7 +35,7 @@ jobs:
         run: nx test nest-backend
 
       - name: Test nest-backend-e2e
-        run: nx test nest-backend-e2e
+        run: nx e2e nest-backend-e2e
 
   deploy:
     needs: [build, test]

@@ -62,8 +62,8 @@ export class CurrencyService {
         rate = response.data.rates[symbols];
         console.log("Base = " + base + "; target = " + symbols + "; " + options + " rate: " + rate);
         this.saveCurrency(
-            `${base}`,
-            `${symbols}`,
+           `${base}`,
+           `${symbols}`,
             rate, date);
         return rate;
     }
